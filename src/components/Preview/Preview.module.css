@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.preview{
+    border:2px solid purple;
+}
+
+.personal{
+    background-color: #ffeddf;
+    color:#6b7a81
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+main{
+    background-color: #66788c;
+    color:#cddfeb
+}
+
+.section__title{
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.content{
+    text-transform: none;
+    font-weight: 400;
+    text-align: left;
+}

@@ -1,3 +1,5 @@
+import PersonalInfo from "./PersonalInfo";
+import classes from './Form.module.css';
 export default function Form({setEmail, setPassword}) {
 //  const [email,setEmail]=useState('');
  function handleEmailChange(e){
@@ -12,7 +14,7 @@ export default function Form({setEmail, setPassword}) {
   return (
     <div>
       <form>
-        <div className="mb-3">
+        {/* <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">
             Email address
           </label>
@@ -37,7 +39,10 @@ export default function Form({setEmail, setPassword}) {
         </div>
         <button type="submit" className="btn btn-primary">
           Submit
-        </button>
+        </button> */}
+        <h2 className={classes.section}>Personal Info</h2>
+        <hr />
+        <PersonalInfo/>
       </form>
     </div>
   );
