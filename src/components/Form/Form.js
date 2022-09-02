@@ -1,10 +1,13 @@
-
-
-export default function Form({setEmail}) {
+export default function Form({setEmail, setPassword}) {
 //  const [email,setEmail]=useState('');
  function handleEmailChange(e){
     setEmail(e.target.value);
  }
+
+ function handlePasswordChange(e){
+    setPassword(e.target.value)
+ }
+
 
   return (
     <div>
@@ -29,6 +32,7 @@ export default function Form({setEmail}) {
             type="password"
             className="form-control"
             id="exampleInputPassword1"
+            onChange={handlePasswordChange}
           />
         </div>
         <button type="submit" className="btn btn-primary">
