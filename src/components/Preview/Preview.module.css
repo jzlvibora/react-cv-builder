@@ -3,9 +3,9 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-.preview{
+/* .preview{
     border:2px solid purple;
-}
+} */
 
 .personal{
     background-color: #ffeddf;
@@ -33,3 +33,4 @@ main{
     font-weight: 400;
     text-align: left;
 }
+

@@ -3,7 +3,7 @@ import {MdEmail} from 'react-icons/md';
 import {AiFillHome} from 'react-icons/ai';
 import {AiFillPhone} from 'react-icons/ai'
 
-export default function Preview({firstname,lastname,email,phone,address,title,photo}) {
+export default function Preview({firstname,lastname,email,phone,address,title,photo,jobTitle,startDate,endDate,company,companyAdd,jobDesc}) {
   return (
     <div className={classes.preview}>
       <div className="row">
@@ -29,8 +29,21 @@ export default function Preview({firstname,lastname,email,phone,address,title,ph
             </div>
         </div>
         </div>
+
         <main className="col-7">
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, fugit impedit vitae consectetur eius minus cumque enim corrupti id sequi sapiente, aut possimus corporis nam! Quo quibusdam reiciendis quaerat enim?
+        <div className="work">
+                <div className={classes.section__title}>
+                    <h6>Work Experience</h6>
+                    <div className={classes.content}>
+                    <p>{jobTitle}</p>
+                    <p><span>{startDate}</span> to <span>{endDate}</span></p>
+                    <p>{company}</p>
+                    <p>{companyAdd}</p>
+                    <p>{jobDesc}</p>
+                    </div>
+                </div>
+            </div>
+{/* Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, fugit impedit vitae consectetur eius minus cumque enim corrupti id sequi sapiente, aut possimus corporis nam! Quo quibusdam reiciendis quaerat enim? */}
         </main>
 
       </div>
