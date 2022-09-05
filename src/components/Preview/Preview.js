@@ -3,7 +3,7 @@ import {MdEmail} from 'react-icons/md';
 import {AiFillHome} from 'react-icons/ai';
 import {AiFillPhone} from 'react-icons/ai'
 
-export default function Preview({ email, password }) {
+export default function Preview({firstname,lastname,email,phone,address,title,photo}) {
   return (
     <div className={classes.preview}>
       <div className="row">
@@ -12,18 +12,18 @@ export default function Preview({ email, password }) {
             <div className={classes.personal}>
             <img src='https://cdn-icons-png.flaticon.com/512/1226/1226097.png' className="img-thumbnail rounded" alt="..."/>
             <div className={classes.title}>
-            <h3>Jayzel</h3>
-            <h3>Gonzales</h3>
+            <h3>{firstname}</h3>
+            <h3>{lastname}</h3>
             </div>
-            <h5>Software Developer</h5>
+            <h5>{title}</h5>
             <hr />
             <div className="contact">
                 <div className={classes.section__title}>
                     <h6>Contact Details</h6>
                     <div className={classes.content}>
-                    <p><MdEmail/>j.vbr.gonzales@gmail.com</p>
-                    <p><AiFillHome/>Manila, PH</p>
-                    <p><AiFillPhone/>09274558729</p>
+                    <p><MdEmail className='mx-2'/>{email}</p>
+                    <p><AiFillHome className='mx-2'/>{address}</p>
+                    <p><AiFillPhone className='mx-2'/>{phone}</p>
                     </div>
                 </div>
             </div>
