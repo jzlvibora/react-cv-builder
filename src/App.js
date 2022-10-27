@@ -1,10 +1,12 @@
 import './App.css';
-import Layout from './components/Layout/Layout';
+import { Resume } from './components/Resume';
+import {WorkXp} from './components/WorkXp'
 
 function App() {
   return (
     <div className="App">
-      <Layout></Layout>
+      <Resume/>
+      {/* <WorkXp/> */}
     </div>
   );
 }

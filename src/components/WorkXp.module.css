@@ -1,0 +1,27 @@
+
+/* timeline */
+.timeline {
+    border-left: 2px solid #5b7786;
+    position: relative;
+    list-style: none;
+  }
+  
+  .timeline .timeline_item {
+    position: relative;
+  }
+  
+  .timeline .timeline_item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  
+  .timeline .timeline_item:after {
+    background-color: #5b7786;
+    left: -38px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+  }
+  
