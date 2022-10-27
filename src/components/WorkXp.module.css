@@ -1,9 +1,16 @@
 
 /* timeline */
+
 .timeline {
     border-left: 2px solid #5b7786;
     position: relative;
     list-style: none;
+    color:#5b7686;
+    text-align: left;
+  }
+
+  .timeline_item h5{
+    text-align: left;
   }
   
   .timeline .timeline_item {
