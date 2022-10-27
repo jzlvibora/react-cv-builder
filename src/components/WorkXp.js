@@ -1,7 +1,13 @@
 import classes from './WorkXp.module.css';
+import '../App.css'
+import { Container} from 'react-bootstrap';
 
 export const WorkXp = ()=>{
     return (
+        <div><h3 className="section_title">Work Experience</h3>
+        <hr/>  
+        <Container className={classes.section} fluid>
+        
         <section className="py-5">
   <ul className={classes.timeline}>
     <li className={`${classes.timeline_item} mb-5`}>
@@ -53,5 +59,8 @@ export const WorkXp = ()=>{
     </li>
   </ul>
 </section>
+        </Container>
+        </div> 
+
     )
 }

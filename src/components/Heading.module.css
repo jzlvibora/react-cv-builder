@@ -1,0 +1,19 @@
+.section_heading{
+    text-align: left;
+}
+
+.section_heading h1{
+    letter-spacing: .5rem;
+    font-weight: 700;
+    color:#044962;
+    color:#808f87;
+    color:#5a7684;
+}
+
+.section_heading h5{
+    color:#6d8c9c
+}
+
+.section_heading p{
+    color:#6d8c9c
+}
